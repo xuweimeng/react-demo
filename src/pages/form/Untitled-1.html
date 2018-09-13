@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>闭包</title>
+</head>
+<body>
+
+
+</body>
+<script>
+  function show () {
+    var name="李四"
+    return function() {
+      return name;
+    }
+  }
+  var fun = show()
+  alert(fun())
+
+</script>
+</html>
